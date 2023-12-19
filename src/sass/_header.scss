@@ -1,0 +1,42 @@
+.header {
+	padding: 17px 0;
+	position: relative;
+
+	&-nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&-menu_btn {
+		text-transform: uppercase;
+		font-weight: 900;
+		font-size: 11px;
+		line-height: 1.18;
+		color: var(--accent-color);
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 36px;
+		height: 23px;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			background-color: var(--accent-color);
+			width: 36px;
+			height: 3px;
+			left: 0;
+		}
+
+		&::before {
+			top: 0px;
+		}
+
+		&::after {
+			bottom: 0px;
+		}
+	}
+}

@@ -1,7 +1,8 @@
 .hero {
 	background-image: url(../images/background.jpg);
 	background-size: cover;
-	height: calc(100vh - 83px);
+	background-repeat: no-repeat;
+	overflow-x: hidden;
 
 	@media (max-width: 768px) {
 		& .container {
@@ -10,7 +11,7 @@
 	}
 
 	&-inner {
-		height: calc(100vh - 83px);
+		height: calc(100vh - 82.97px);
 		display: flex;
 		flex-direction: column;
 	}

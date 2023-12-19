@@ -6,6 +6,7 @@
 	background-color: var(--accent-color);
 	max-width: 450px;
 	width: 100%;
+	height: 100vh;
 	padding-top: clamp(106px, 3vw, 140px);
 	padding-left: clamp(20px, 2vw, 55px);
 	padding-right: clamp(20px, 2vw, 55px);
@@ -20,7 +21,7 @@
 		text-transform: uppercase;
 		font-weight: 900;
 		font-size: 11px;
-		line-height: 1.18;
+		line-height: 1;
 		color: var(--white-color);
 		display: flex;
 		align-items: center;
@@ -47,7 +48,7 @@
 		}
 
 		&::before {
-			top: 0px;
+			top: -1px;
 		}
 
 		&::after {

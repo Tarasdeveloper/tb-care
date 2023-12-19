@@ -1,6 +1,7 @@
 .header {
 	padding: 18px 0;
 	position: relative;
+	overflow-x: hidden;
 
 	&-nav {
 		display: flex;
@@ -10,9 +11,10 @@
 
 	&-menu_btn {
 		text-transform: uppercase;
+		font-family: inherit;
 		font-weight: 900;
 		font-size: 11px;
-		line-height: 1.18;
+		line-height: 1;
 		color: var(--accent-color);
 		position: relative;
 		display: flex;

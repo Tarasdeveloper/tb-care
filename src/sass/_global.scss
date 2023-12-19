@@ -42,7 +42,16 @@ body {
 .container {
 	max-width: 1350px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 20px;
+}
+
+.logo {
+	&-img {
+		width: 253px;
+		@media (max-width: 768px) {
+			width: 212px;
+		}
+	}
 }
 
 // .wrapper {

@@ -3,6 +3,12 @@
 	background-size: cover;
 	height: calc(100vh - 80px);
 
+	@media (max-width: 768px) {
+		& .container {
+			padding: 0 0;
+		}
+	}
+
 	&-inner {
 		height: calc(100vh - 80px);
 		display: flex;
@@ -15,14 +21,20 @@
 		max-width: 700px;
 		margin-top: auto;
 		margin-bottom: 60px;
+
+		@media (max-width: 768px) {
+			padding: 40px 20px;
+			margin-bottom: 0;
+		}
 	}
 
 	&-title {
-		font-size: 50px;
+		font-size: clamp(40px, 5vw, 50px);
 		font-weight: 900;
 		text-transform: uppercase;
 		color: var(--accent-color);
 		margin-bottom: 10px;
+		line-height: 1;
 	}
 
 	&-text {
@@ -31,15 +43,19 @@
 		color: #212121;
 		letter-spacing: 0.5px;
 		margin-bottom: 26px;
+		@media (max-width: 768px) {
+			margin-bottom: 18px;
+		}
 	}
 
 	&-video_btn {
 		width: 175px;
-		padding: 12px 43px;
+		padding: 10px 43px;
 		text-transform: uppercase;
 		color: var(--accent-color);
-		font-size: 14px;
+		font-size: 15px;
 		line-height: 1.2;
+		font-weight: 600;
 		border: 1px solid transparent;
 		border-image: linear-gradient(270deg, #dff600 0%, #017ee2 100%);
 		border-image-slice: 1;

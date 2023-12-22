@@ -5,17 +5,17 @@ document.addEventListener('DOMContentLoaded', function () {
 	const backdrop = document.getElementById('backdrop');
 
 	headerMenuBtn.addEventListener('click', function () {
-		nav.classList.toggle('show');
+		nav.classList.toggle('aside_menu-show');
 		backdrop.style.display = 'block';
 	});
 
 	closeButton.addEventListener('click', function () {
-		nav.classList.remove('show');
+		nav.classList.remove('aside_menu-show');
 		backdrop.style.display = 'none';
 	});
 
 	backdrop.addEventListener('click', function () {
 		backdrop.style.display = 'none';
-		nav.classList.remove('show');
+		nav.classList.remove('aside_menu-show');
 	});
 });

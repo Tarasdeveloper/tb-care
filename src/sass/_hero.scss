@@ -1,70 +1,92 @@
 .hero {
-	background-image: url(../images/background.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	overflow-x: hidden;
+	position: relative;
+	padding-top: 5rem;
 
-	@media (max-width: 768px) {
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	// height: calc(100vh - 5rem);
+
+	@media (max-width: 48rem) {
 		& .container {
 			padding: 0 0;
 		}
 	}
 
+	&-picture {
+		width: 100%;
+		object-fit: cover;
+	}
+
 	&-inner {
-		height: calc(100vh - 82.97px);
+		padding-bottom: 3.74rem;
+
 		display: flex;
 		flex-direction: column;
+		min-height: calc(100vh - 5rem);
+
+		@media (max-width: 48rem) {
+			padding-bottom: 0;
+		}
 	}
 
 	&-video_block {
-		background-color: rgba(255, 255, 255, 0.9);
-		padding: 50px;
-		max-width: 700px;
+		padding: 3.124rem;
+		max-width: 43.74rem;
 		margin-top: auto;
-		margin-bottom: 60px;
 
-		@media (max-width: 768px) {
-			padding: 40px 20px;
+		z-index: 1;
+
+		background-color: rgba(255, 255, 255, 0.9);
+
+		@media (max-width: 48rem) {
+			padding: 2.4rem 1.24rem;
 			margin-bottom: 0;
+		}
+
+		& p {
+			margin-bottom: 1.624rem;
+
+			font-size: 1rem;
+			line-height: 1.5;
+			letter-spacing: 0.5px;
+
+			@media (max-width: 48rem) {
+				margin-bottom: 1.124rem;
+			}
 		}
 	}
 
 	&-title {
-		font-size: clamp(40px, 5vw, 50px);
+		margin-bottom: 0.625rem;
+
+		font-size: clamp(2.5rem, 5vw, 3.125rem);
 		font-weight: 900;
 		text-transform: uppercase;
 		color: var(--accent-color);
-		margin-bottom: 10px;
 		line-height: 1;
 	}
 
-	&-text {
-		font-size: 16px;
-		line-height: 1.5;
-		color: #212121;
-		letter-spacing: 0.5px;
-		margin-bottom: 26px;
-		@media (max-width: 768px) {
-			margin-bottom: 18px;
-		}
-	}
-
 	&-video_btn {
-		width: 175px;
-		padding: 10px 43px;
+		width: 10.938rem;
+		padding: 0.625rem 2.688rem;
+
 		text-transform: uppercase;
 		color: var(--accent-color);
-		font-size: 15px;
+		font-size: 0.938rem;
 		line-height: 1.2;
 		font-weight: 600;
-		border: 1px solid transparent;
+
+		border: 0.063rem solid transparent;
 		border-image: linear-gradient(270deg, #dff600 0%, #017ee2 100%);
 		border-image-slice: 1;
-		border-radius: 12px;
-		transition: all var(--transit);
+		border-radius: 0.75rem;
+
+		transition: all var(--transition);
 
 		&:hover {
 			border-image-source: linear-gradient(to right, #fff45f, #7d7bfe);
+			color: var(--hover-color);
 		}
 	}
 }

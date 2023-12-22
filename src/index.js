@@ -1,1 +1,1 @@
-import './JS/menuBtn';
+import './js/menuBtn';

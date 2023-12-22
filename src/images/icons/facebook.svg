@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <g id="socialmysocialfacebook" fill-opacity="1">
-    <path d="M-1809 -146L-1809 -146L-1809 -116L-1839 -116L-1839 -146L-1809 -146Z" id="socialmysocialfacebook" fill="none" stroke="none" />
-    <path d="M17.0685 25L13.1887 25L13.1887 15.6238L11.25 15.6238L11.25 12.3931L13.1887 12.3931L13.1887 10.4535C13.1887 7.81803 14.2828 6.25 17.3933 6.25L19.9822 6.25L19.9822 9.4819L18.3642 9.4819C17.1533 9.4819 17.0733 9.93338 17.0733 10.776L17.0679 12.3931L20 12.3931L19.6568 15.6238L17.0679 15.6238L17.0679 25L17.0685 25Z" id="facebook" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+  <path fill="none" d="M-1809-146v30h-30v-30h30Z"/>
+  <path fill="#000" fill-rule="evenodd" d="M17.069 25h-3.88v-9.376H11.25v-3.23h1.939v-1.94c0-2.636 1.094-4.204 4.204-4.204h2.59v3.232h-1.619c-1.21 0-1.29.451-1.29 1.294l-.006 1.617H20l-.343 3.23h-2.59V25h.002Z"/>
 </svg>

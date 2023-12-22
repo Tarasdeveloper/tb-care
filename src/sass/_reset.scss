@@ -57,6 +57,7 @@ summary,
 time,
 mark,
 audio,
+picture,
 video,
 button {
 	margin: 0;
@@ -151,6 +152,12 @@ blockquote {
 	}
 }
 
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+}
+
 q {
 	&:before,
 	&:after {
@@ -160,6 +167,11 @@ q {
 
 :focus {
 	outline: 0;
+}
+
+html,
+body {
+	min-height: 100%;
 }
 
 input[type='text'],
@@ -175,30 +187,6 @@ input,
 textarea {
 	border-radius: 0;
 	box-sizing: border-box;
-
-	//   &::-webkit-input-placeholder {
-	//     color: $input_placeholder_color;
-	//   }
-
-	//   &::-moz-placeholder {
-	//     color: $input_placeholder_color;
-	//   }
-	//   &:-ms-input-placeholder {
-	//     color: $input_placeholder_color;
-	//   }
-
-	//   &:focus {
-	//     &::-webkit-input-placeholder {
-	//       color: transparent;
-	//     }
-
-	//     &::-moz-placeholder {
-	//       color: transparent;
-	//     }
-	//     &:-ms-input-placeholder {
-	//       color: transparent;
-	//     }
-	//   }
 }
 
 textarea {

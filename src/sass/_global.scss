@@ -1,101 +1,50 @@
 //------------------------------------------------------------base styles
 
 :root {
-	// --full-screen: calc(var(--vh, 1vh) * 100);
-
-	// --height-header: 10rem;
-	// --height-footer: 10rem;
-	// --gl-indent: 5rem;
 	--accent-color: #017ee2;
 	--white-color: #ffffff;
-	--transit: 0.3s ease-in-out;
+	--transition: 0.3s ease-in-out;
+	--hover-color: #d1ed0d;
+	--default-color: #212121;
 }
 
 html {
-	height: 100%;
-	//   font: 400 calc(100vw / 1920 * 10) / 1.33 $font_1;
+	min-height: 100%;
 }
 
 body {
 	position: relative;
 
-	// display: flex;
-	height: 100%;
-	width: 100vw;
-	overflow-x: hidden;
+	min-height: 100%;
+	// width: 100vw;
 
 	font-family: 'Roboto', sans-serif;
-
-	// 	//   font-size: $font_size_base;
-	// 	//   color: $color_text_base;
-
-	// 	-webkit-text-size-adjust: none;
-	// 	-webkit-font-smoothing: antialiased;
-	// 	-moz-osx-font-smoothing: grayscale;
-
-	// 	//   background: $body_bg;
-
-	// 	@supports (display: grid) {
-	// 		display: block;
-	// 	}
+	color: var(--default-color);
 }
 
 .container {
-	max-width: 1350px;
+	max-width: 84.374rem;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 1.24rem;
 }
 
 .logo {
 	&-img {
-		width: 253px;
-		@media (max-width: 768px) {
-			width: 212px;
+		width: 15.8rem;
+		@media (max-width: 3rem) {
+			width: 13.24rem;
 		}
 	}
 }
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 
-// .wrapper {
-//   position: relative;
-
-//   width: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   min-height: 100%;
-//   height: auto !important;
-
-//   overflow-x: hidden;
-// }
-
-// .base {
-//   width: 100%;
-//   position: relative;
-//   padding: var(--height-header) 0 0;
-
-//   flex: 1 0 auto;
-// }
-
-// a {
-//   text-decoration: none;
-//   //   color: $color_link_base;
-
-//   &:hover,
-//   &:focus {
-//     text-decoration: underline;
-//   }
-// }
-
-// // for wp
-
-// .editor-styles-wrapper .wp-block {
-//   margin-bottom: 5rem;
-// }
-// html :where(.wp-block) {
-//   max-width: 1200px;
-// }
-
-// .editor-styles-wrapper {
-//   overflow-x: hidden;
-// }
+	display: none;
+	background: rgba(0, 0, 0, 0.5);
+}
 
 //------------------------------------------------------------base styles###
